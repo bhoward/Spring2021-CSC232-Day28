@@ -25,7 +25,7 @@ public class Main {
 		raceCondition();
 		noRaceCondition();
 		computeBound();
-		// ioBound();
+		ioBound();
 	}
 
 	/**
