@@ -1,4 +1,5 @@
 package util;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -9,19 +10,19 @@ import java.io.InputStream;
  * @author bhoward
  */
 public class FileSource implements Source {
-    private String description;
-    private String fileName;
+  private String description;
+  private String fileName;
 
-    public FileSource(String description, String fileName) {
-	this.description = description;
-	this.fileName = fileName;
-    }
+  public FileSource(String description, String fileName) {
+    this.description = description;
+    this.fileName = fileName;
+  }
 
-    public String getDescription() {
-	return description;
-    }
+  public String getDescription() {
+    return description;
+  }
 
-    public InputStream getInputStream() throws IOException {
-	return new FileInputStream(fileName);
-    }
+  public InputStream getInputStream() throws IOException {
+    return new FileInputStream(fileName);
+  }
 }

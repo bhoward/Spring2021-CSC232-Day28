@@ -1,4 +1,5 @@
 package util;
+
 import java.io.IOException;
 import java.io.InputStream;
 
@@ -9,7 +10,7 @@ import java.io.InputStream;
  * @author bhoward
  */
 public interface Source {
-    String getDescription();
+  String getDescription();
 
-    InputStream getInputStream() throws IOException;
+  InputStream getInputStream() throws IOException;
 }

@@ -1,4 +1,5 @@
 package util;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
@@ -13,21 +14,21 @@ import java.net.URLConnection;
  * @author bhoward
  */
 public class URLSource implements Source {
-    private String description;
-    private String urlString;
+  private String description;
+  private String urlString;
 
-    public URLSource(String description, String urlString) {
-	this.description = description;
-	this.urlString = urlString;
-    }
+  public URLSource(String description, String urlString) {
+    this.description = description;
+    this.urlString = urlString;
+  }
 
-    public String getDescription() {
-	return description;
-    }
+  public String getDescription() {
+    return description;
+  }
 
-    public InputStream getInputStream() throws IOException {
-	URL url = new URL(urlString);
-	URLConnection connection = url.openConnection();
-	return connection.getInputStream();
-    }
+  public InputStream getInputStream() throws IOException {
+    URL url = new URL(urlString);
+    URLConnection connection = url.openConnection();
+    return connection.getInputStream();
+  }
 }
